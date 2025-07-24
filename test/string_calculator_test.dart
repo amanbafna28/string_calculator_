@@ -24,7 +24,7 @@ void main() {
       expect(add('//;\n1;2'), 3);
     });
 
-    test('Phase 5: Throws on negative numbers', () {
+    test('Phase 6: Throws on negative numbers', () {
       expect(
             () => add('2,-4,3,-1'),
         throwsA(predicate((e) =>
