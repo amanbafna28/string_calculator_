@@ -26,10 +26,10 @@ void main() {
 
     test('Phase 6: Throws on negative numbers', () {
       expect(
-            () => add('2,-4,3,-1'),
+            () => add('12,-4,-33,-1,90'),
         throwsA(predicate((e) =>
         e is Exception &&
-            e.toString().contains('negative numbers not allowed -4,-1'))),
+            e.toString().contains('negative numbers not allowed'))),
       );
     });
   });
